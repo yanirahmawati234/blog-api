@@ -1,7 +1,6 @@
-import { register, login } from '../src/controllers/auth.controller';
+import { register } from '../src/controllers/auth.controller';
 import { User } from '../src/models/user.models';
 import bcrypt from 'bcrypt';
-import jwt from 'jsonwebtoken';
 import { Request, Response } from 'express';
 import { successResponse, errorResponse } from '../src/utils/response';
 
