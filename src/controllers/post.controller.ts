@@ -15,6 +15,7 @@ export const getAllPosts = async (_req: Request, res: Response): Promise<void> =
 
 export const getPostById = async (req: Request, res: Response): Promise<void> => {
     const postId = parseInt(req.params.id, 10);
+    
     try {
         const post = await Post.findByPk(postId);
         if (!post) {
